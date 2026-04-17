@@ -1,0 +1,199 @@
+/* Dark theme overrides — applied when <html class="dark"> */
+html.dark body {
+  color: var(--color-text-dark, #ffffff);
+  background-color: var(--color-background-dark, #202124);
+}
+
+html.dark ::-moz-selection {
+  background: var(--color-primary-dark, #50fa7b);
+  color: #000000;
+  text-shadow: none;
+}
+
+html.dark ::selection {
+  background: var(--color-primary-dark, #50fa7b);
+  color: #000000;
+  text-shadow: none;
+}
+
+html.dark hr {
+  border-block-start: 3px dotted var(--color-border-dark, #0066ff);
+}
+
+html.dark code {
+  background-color: var(--color-background-code-dark, #3a3a3a);
+  color: var(--color-text-dark, #ffffff);
+}
+
+html.dark pre {
+  background-color: var(--color-background-pre-dark, #272822);
+  border-color: var(--color-border-dark, #0066ff);
+}
+
+html.dark blockquote {
+  border-color: var(--color-border-dark, #0066ff);
+  color: var(--color-text-muted-dark, #dddddd);
+}
+
+/* Headings */
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: var(--color-text-muted-dark, #dddddd);
+}
+
+html.dark h1::before { color: var(--color-primary-dark, #50fa7b); }
+html.dark h2::before { color: var(--color-primary-dark, #50fa7b); }
+html.dark h3::before { color: var(--color-primary-dark, #50fa7b); }
+html.dark h4::before { color: var(--color-primary-dark, #50fa7b); }
+html.dark h5::before { color: var(--color-primary-dark, #50fa7b); }
+html.dark h6::before { color: var(--color-primary-dark, #50fa7b); }
+
+html.dark .toc {
+  background-color: var(--color-background-toc-dark, #272822);
+  color: var(--color-text-dark, #ffffff);
+  border-color: var(--color-border-dark, #0066ff);
+}
+
+/* Links */
+html.dark a {
+  border-block-end: 3px solid var(--color-primary-dark, #50fa7b);
+  color: inherit;
+}
+
+html.dark a:hover,
+html.dark a:focus {
+  background-color: var(--color-primary-dark, #50fa7b);
+  color: #000000;
+  outline-color: var(--color-primary-dark, #50fa7b);
+}
+
+html.dark .site-description a {
+  color: var(--color-text-muted-dark, #dddddd);
+}
+
+html.dark .site-description a:hover,
+html.dark .site-description a:focus {
+  color: #000000;
+}
+
+/* Tags */
+html.dark .tags a {
+  border-block-end: 3px solid var(--color-primary-dark, #50fa7b);
+}
+
+html.dark .tags a:hover,
+html.dark .tags a:focus {
+  background-color: var(--color-primary-dark, #50fa7b);
+  color: #000000;
+}
+
+html.dark .site-title a {
+  color: var(--color-text-dark, #ffffff);
+  text-decoration: none !important;
+}
+
+html.dark .header nav,
+html.dark footer {
+  border-color: var(--color-border-dark, #0066ff);
+}
+
+html.dark .highlight {
+  background-color: var(--color-background-pre-dark, #272822);
+}
+
+html.dark .soc:hover,
+html.dark .soc:focus {
+  color: #000000;
+  outline-color: var(--color-primary-dark, #50fa7b);
+}
+
+html.dark .draft-label {
+  color: var(--color-text-dark, #ffffff);
+  background-color: var(--color-background-draft-dark, #0066ff);
+}
+
+/* Tables in dark mode */
+html.dark table th {
+  background-color: var(--color-background-pre-dark, #272822);
+  color: var(--color-text-dark, #ffffff);
+  border-color: var(--color-border-dark, #0066ff);
+}
+
+html.dark table td {
+  border-color: var(--color-border-dark, #0066ff);
+  color: var(--color-text-dark, #ffffff);
+}
+
+html.dark table tr:nth-child(even) {
+  background-color: var(--color-background-code-dark, #3a3a3a);
+}
+
+/* Navigation toggle in dark mode */
+html.dark .nav-toggle {
+  color: var(--color-text-dark, #ffffff);
+}
+
+html.dark .nav-toggle:hover,
+html.dark .nav-toggle:focus {
+  background-color: var(--color-primary-dark, #50fa7b);
+  color: #000000;
+  outline-color: var(--color-primary-dark, #50fa7b);
+}
+
+/* Callouts in dark mode */
+html.dark .callout {
+  background-color: var(--color-background-pre-dark, #272822);
+  color: var(--color-text-dark, #ffffff);
+}
+
+html.dark .callout-alert {
+  color: #f8d7da;
+  background-color: #2d1b1d;
+  border-color: #842029;
+}
+
+html.dark .callout-tip {
+  color: #d1ecf1;
+  background-color: #0c2428;
+  border-color: #0f5132;
+}
+
+html.dark .callout-warning {
+  color: #fff3cd;
+  background-color: #332701;
+  border-color: #997404;
+}
+
+html.dark .callout-custom {
+  color: var(--color-text-dark, #ffffff);
+}
+
+/* Search in dark mode */
+html.dark .search-panel,
+html.dark .search-result-card {
+  background-color: var(--color-background-pre-dark, #272822);
+  border-color: var(--color-border-dark, #0066ff);
+}
+
+html.dark .search-input,
+html.dark kbd {
+  background-color: var(--color-background-code-dark, #3a3a3a);
+  border-color: var(--color-border-dark, #0066ff);
+  color: var(--color-text-dark, #ffffff);
+}
+
+html.dark .search-input:focus {
+  outline-color: var(--color-primary-dark, #50fa7b);
+}
+
+html.dark .search-status-error {
+  color: var(--color-error-dark, #ff7b72);
+}
+
+html.dark .search-tag {
+  border-color: var(--color-primary-dark, #50fa7b);
+}
