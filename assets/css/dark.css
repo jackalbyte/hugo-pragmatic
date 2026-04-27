@@ -1,38 +1,52 @@
 /* Dark theme overrides — applied when <html class="dark"> */
+html.dark {
+  --color-primary: #50fa7b;
+  --color-primary-hover: #3dd458;
+  --color-border: #0066ff;
+  --color-text: #ffffff;
+  --color-text-muted: #dddddd;
+  --color-background: #202124;
+  --color-background-code: #3a3a3a;
+  --color-background-pre: #3a3a3a;
+  --color-background-toc: #272822;
+  --color-background-draft: #0066ff;
+  --color-error-dark: #ff7b72;
+}
+
 html.dark body {
-  color: var(--color-text-dark, #ffffff);
-  background-color: var(--color-background-dark, #202124);
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 html.dark ::-moz-selection {
-  background: var(--color-primary-dark, #50fa7b);
+  background: var(--color-primary);
   color: #000000;
   text-shadow: none;
 }
 
 html.dark ::selection {
-  background: var(--color-primary-dark, #50fa7b);
+  background: var(--color-primary);
   color: #000000;
   text-shadow: none;
 }
 
 html.dark hr {
-  border-block-start: 3px dotted var(--color-border-dark, #0066ff);
+  border-block-start: 3px dotted var(--color-border);
 }
 
 html.dark code {
-  background-color: var(--color-background-code-dark, #3a3a3a);
-  color: var(--color-text-dark, #ffffff);
+  background-color: var(--color-background-code);
+  color: var(--color-text);
 }
 
 html.dark pre {
-  background-color: var(--color-background-pre-dark, #272822);
-  border-color: var(--color-border-dark, #0066ff);
+  background-color: var(--color-background-pre);
+  border-color: var(--color-border);
 }
 
 html.dark blockquote {
-  border-color: var(--color-border-dark, #0066ff);
-  color: var(--color-text-muted-dark, #dddddd);
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
 }
 
 /* Headings */
@@ -42,37 +56,37 @@ html.dark h3,
 html.dark h4,
 html.dark h5,
 html.dark h6 {
-  color: var(--color-text-muted-dark, #dddddd);
+  color: var(--color-text-muted);
 }
 
-html.dark h1::before { color: var(--color-primary-dark, #50fa7b); }
-html.dark h2::before { color: var(--color-primary-dark, #50fa7b); }
-html.dark h3::before { color: var(--color-primary-dark, #50fa7b); }
-html.dark h4::before { color: var(--color-primary-dark, #50fa7b); }
-html.dark h5::before { color: var(--color-primary-dark, #50fa7b); }
-html.dark h6::before { color: var(--color-primary-dark, #50fa7b); }
+html.dark h1::before { color: var(--color-primary); }
+html.dark h2::before { color: var(--color-primary); }
+html.dark h3::before { color: var(--color-primary); }
+html.dark h4::before { color: var(--color-primary); }
+html.dark h5::before { color: var(--color-primary); }
+html.dark h6::before { color: var(--color-primary); }
 
 html.dark .toc {
-  background-color: var(--color-background-toc-dark, #272822);
-  color: var(--color-text-dark, #ffffff);
-  border-color: var(--color-border-dark, #0066ff);
+  background-color: var(--color-background-toc);
+  color: var(--color-text);
+  border-color: var(--color-border);
 }
 
 /* Links */
 html.dark a {
-  border-block-end: 3px solid var(--color-primary-dark, #50fa7b);
+  border-block-end: 3px solid var(--color-primary);
   color: inherit;
 }
 
 html.dark a:hover,
 html.dark a:focus {
-  background-color: var(--color-primary-dark, #50fa7b);
+  background-color: var(--color-primary);
   color: #000000;
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary);
 }
 
 html.dark .site-description a {
-  color: var(--color-text-muted-dark, #dddddd);
+  color: var(--color-text-muted);
 }
 
 html.dark .site-description a:hover,
@@ -82,72 +96,72 @@ html.dark .site-description a:focus {
 
 /* Tags */
 html.dark .tags a {
-  border-block-end: 3px solid var(--color-primary-dark, #50fa7b);
+  border-block-end: 3px solid var(--color-primary);
 }
 
 html.dark .tags a:hover,
 html.dark .tags a:focus {
-  background-color: var(--color-primary-dark, #50fa7b);
+  background-color: var(--color-primary);
   color: #000000;
 }
 
 html.dark .site-title a {
-  color: var(--color-text-dark, #ffffff);
+  color: var(--color-text);
   text-decoration: none !important;
 }
 
 html.dark .header nav,
 html.dark footer {
-  border-color: var(--color-border-dark, #0066ff);
+  border-color: var(--color-border);
 }
 
 html.dark .highlight {
-  background-color: var(--color-background-pre-dark, #272822);
+  background-color: var(--color-background-pre);
 }
 
 html.dark .soc:hover,
 html.dark .soc:focus {
   color: #000000;
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary);
 }
 
 html.dark .draft-label {
-  color: var(--color-text-dark, #ffffff);
-  background-color: var(--color-background-draft-dark, #0066ff);
+  color: var(--color-text);
+  background-color: var(--color-background-draft);
 }
 
 /* Tables in dark mode */
 html.dark table th {
-  background-color: var(--color-background-pre-dark, #272822);
-  color: var(--color-text-dark, #ffffff);
-  border-color: var(--color-border-dark, #0066ff);
+  background-color: var(--color-background-pre);
+  color: var(--color-text);
+  border-color: var(--color-border);
 }
 
 html.dark table td {
-  border-color: var(--color-border-dark, #0066ff);
-  color: var(--color-text-dark, #ffffff);
+  border-color: var(--color-border);
+  color: var(--color-text);
 }
 
 html.dark table tr:nth-child(even) {
-  background-color: var(--color-background-code-dark, #3a3a3a);
+  background-color: var(--color-background-code);
 }
 
 /* Navigation toggle in dark mode */
 html.dark .nav-toggle {
-  color: var(--color-text-dark, #ffffff);
+  color: var(--color-text);
 }
 
 html.dark .nav-toggle:hover,
 html.dark .nav-toggle:focus {
-  background-color: var(--color-primary-dark, #50fa7b);
+  background-color: var(--color-primary);
   color: #000000;
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary);
 }
 
 /* Callouts in dark mode */
 html.dark .callout {
-  background-color: var(--color-background-pre-dark, #272822);
-  color: var(--color-text-dark, #ffffff);
+  background-color: var(--color-background-pre);
+  color: var(--color-text);
 }
 
 html.dark .callout-alert {
@@ -169,31 +183,31 @@ html.dark .callout-warning {
 }
 
 html.dark .callout-custom {
-  color: var(--color-text-dark, #ffffff);
+  color: var(--color-text);
 }
 
 /* Search in dark mode */
 html.dark .search-panel,
 html.dark .search-result-card {
-  background-color: var(--color-background-pre-dark, #272822);
-  border-color: var(--color-border-dark, #0066ff);
+  background-color: var(--color-background-pre);
+  border-color: var(--color-border);
 }
 
 html.dark .search-input,
 html.dark kbd {
-  background-color: var(--color-background-code-dark, #3a3a3a);
-  border-color: var(--color-border-dark, #0066ff);
-  color: var(--color-text-dark, #ffffff);
+  background-color: var(--color-background-code);
+  border-color: var(--color-border);
+  color: var(--color-text);
 }
 
 html.dark .search-input:focus {
-  outline-color: var(--color-primary-dark, #50fa7b);
+  outline-color: var(--color-primary);
 }
 
 html.dark .search-status-error {
-  color: var(--color-error-dark, #ff7b72);
+  color: var(--color-error-dark);
 }
 
 html.dark .search-tag {
-  border-color: var(--color-primary-dark, #50fa7b);
+  border-color: var(--color-primary);
 }
